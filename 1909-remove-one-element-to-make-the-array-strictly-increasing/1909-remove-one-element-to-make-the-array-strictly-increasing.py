@@ -8,3 +8,18 @@ class Solution:
             if min(result) > 0:
                 return True
         return False
+
+"""
+class Solution(object):
+    def canBeIncreasing(self, nums):
+        count = 0
+        for i in range(1, len(nums)):
+            if nums[i] <= nums[i-1]:
+                print("  count")
+                count += 1
+                if i>1 and nums[i] <= nums[i-2]:
+                    print("  milgy")
+                    nums[i] = nums[i-1]
+            print(f"[{i}] {nums[i]} {nums}")
+        return count <= 1
+"""
