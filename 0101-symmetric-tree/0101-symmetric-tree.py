@@ -13,9 +13,6 @@ class Solution:
         self.searchLeft(root.left, leftStack)
         self.searchRight(root.right, rightStack)
         
-        print(leftStack)
-        print(rightStack)
-        
         for i in range(0, len(leftStack)):
             if leftStack[i] != rightStack[i]:
                 return False
