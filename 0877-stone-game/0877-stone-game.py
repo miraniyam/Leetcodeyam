@@ -5,8 +5,8 @@ class Solution:
         
         turn = 0
         
-        while(turn <= len(piles)):
-            if turn == 0 or turn % 2 == 1:
+        while(turn < len(piles)):
+            if turn % 2 == 0:
                 # alice's turn
                 alice += max(piles)
             else:
